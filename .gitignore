@@ -1,0 +1,28 @@
+# Entorno virtual
+venv/
+env/
+.env
+.envrc
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Base de datos
+*.db
+*.sqlite3
+
+# Archivos de respaldo
+*.bak
+app/main.py.bak
+
+# Archivos de IDE/Sistema
+.vscode/
+.idea/
+.DS_Store
+*.log
+
+# Volúmenes de Docker (si existen)
+data/
