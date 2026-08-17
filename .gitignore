@@ -1,14 +1,5 @@
 # Entorno virtual
 venv/
-env/
-.env
-.envrc
-
-# Caché de Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
 
 # Base de datos
 *.db
@@ -18,11 +9,12 @@ __pycache__/
 *.bak
 app/main.py.bak
 
-# Archivos de IDE/Sistema
-.vscode/
-.idea/
-.DS_Store
-*.log
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Volúmenes de Docker (si existen)
-data/
+# Archivos del sistema
+.DS_Store
+Thumbs.db
