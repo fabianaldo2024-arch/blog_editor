@@ -4,25 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}TechSilver{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style-claro.css">
     
     <!-- Tailwind CSS vía CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Estilos personalizados (se pueden generar con Python después) -->
     <style>
-        .tech-gradient {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        }
-        .silver-text {
-            background: linear-gradient(90deg, #c0c0c0, #f0f0f0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+        
         .hover-glow:hover {
             box-shadow: 0 0 30px rgba(192, 192, 192, 0.2);
             transform: translateY(-2px);
@@ -32,7 +21,7 @@
 </head>
 <body class="h-full tech-gradient text-white font-sans antialiased">
     
-    <!-- NAVBAR -->
+
     <nav class="border-b border-white/10 bg-black/20 backdrop-blur-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">

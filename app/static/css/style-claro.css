@@ -1,0 +1,104 @@
+/* ==========================================================
+   TECHSILVER - Estilo Claro/Verde (según captura)
+   ========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg-dark: #1c2b1a;      /* verde muy oscuro (header/footer) */
+    --bg-green-1: #2f4a26;   /* verde oscuro (fondo arriba-izq) */
+    --bg-green-2: #7cb342;   /* verde claro (fondo abajo-der) */
+    --card-glass: rgba(255,255,255,0.08);
+    --border-glass: rgba(255,255,255,0.15);
+    --text-main: #ffffff;
+    --text-muted: #cfe0c8;
+    --accent-orange: #f5a623;
+    --accent-purple: #a78bfa;
+    --accent-green: #4ade80;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-main);
+    /* Degradado verde: oscuro arriba-izquierda -> claro abajo-derecha */
+    background: radial-gradient(circle at 100% 100%, var(--bg-green-2) 0%, var(--bg-green-1) 55%, var(--bg-dark) 100%);
+    min-height: 100vh;
+}
+
+/* ====== NAVBAR ====== */
+nav.border-b {
+    background: var(--bg-dark) !important;
+    border-bottom: none !important;
+    backdrop-filter: none !important;
+}
+
+.silver-text {
+    color: var(--text-main);
+    -webkit-text-fill-color: var(--text-main);
+    background: none;
+}
+
+nav .text-gray-300 { color: var(--text-muted) !important; }
+nav a.px-4.py-2.bg-white\/10 {
+    background: rgba(255,255,255,0.12) !important;
+    border-radius: 30px !important;
+}
+nav a.px-4.py-2.bg-white\/10:hover { background: rgba(255,255,255,0.2) !important; }
+
+/* ====== TÍTULOS Y TEXTO ====== */
+h1.silver-text { font-weight: 800; }
+.text-gray-400 { color: var(--text-muted) !important; }
+.text-gray-300 { color: var(--text-muted) !important; }
+
+/* ====== BADGE "publicaciones disponibles" ====== */
+.bg-white\/5.rounded-full {
+    background: rgba(255,255,255,0.12) !important;
+    color: var(--text-main) !important;
+}
+.bg-green-400 { background: var(--accent-green) !important; }
+
+/* ====== ESTADO VACÍO / TARJETAS ====== */
+.glass-card {
+    background: var(--card-glass);
+    border: 1px solid var(--border-glass);
+    border-radius: 16px;
+}
+
+/* Botón "Ir al panel" y similares (pill gris translúcido) */
+a.bg-white\/10, button.bg-white\/10 {
+    background: rgba(255,255,255,0.15) !important;
+    color: var(--text-main) !important;
+    border-radius: 40px !important;
+    border: none !important;
+}
+a.bg-white\/10:hover, button.bg-white\/10:hover {
+    background: rgba(255,255,255,0.25) !important;
+}
+
+/* ====== CTA FINAL (caja "¿Quieres tener un blog como este?") ====== */
+.bg-white\/5.rounded-3xl {
+    background: rgba(255,255,255,0.10) !important;
+    border: 1px solid var(--border-glass) !important;
+}
+
+/* Botón "Contáctame ahora" degradado naranja -> violeta */
+a.bg-gradient-to-r.from-gray-400.to-gray-200 {
+    background: linear-gradient(90deg, var(--accent-orange), var(--accent-purple)) !important;
+    color: #1c2b1a !important;
+    font-weight: 700 !important;
+}
+
+/* ====== BADGE REEL (si hay posts) ====== */
+.bg-gradient-to-r.from-purple-500.to-pink-500 {
+    background: linear-gradient(90deg, var(--accent-orange), var(--accent-purple)) !important;
+}
+
+/* ====== FOOTER ====== */
+footer.border-t {
+    background: var(--bg-dark) !important;
+    border-top: none !important;
+}
+footer .text-gray-400 { color: var(--text-muted) !important; }
+footer .text-gray-600 { color: rgba(255,255,255,0.4) !important; }
