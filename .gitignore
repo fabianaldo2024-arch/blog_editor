@@ -1,32 +1,23 @@
-# Entorno virtual
-venv/
-env/
-.venv/
+cat >> .gitignore << 'EOF'
+# Variables de entorno / secretos
+.envrc
+.env
 
-# Base de datos
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Bases de datos
 *.db
 *.sqlite3
 *.sqlite
 
-# Archivos de sistema
-os/
-.DS_Store
-Thumbs.db
-
-# Archivos de Python
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
-*.pyd
-*.so
-*.dylib
 
-# Archivos de editor
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Backups
-*.bak
-main.py.bak
+# Logs
+*.log
+EOF
